@@ -6,7 +6,7 @@ function custom_enqueue_style() {
 	// https://developer.wordpress.org/reference/functions/wp_enqueue_script/
 
 
-
+	  // wp_enqueue_script( $handle, $src, $deps, $ver, $in_footer );
 	 // wp_enqueue_style('enqueue name', path , array(), number/false/null , false inside </head> and true inside </body>);
 
 
