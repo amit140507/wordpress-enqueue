@@ -29,13 +29,20 @@ function custom_enqueue_style() {
 
 
 function custom_enqueue_script() {
-	wp_enqueue_script( 'custom-script', get_template_directory_uri() . '/assets/js/custom.js', array(), '1.0.0', true ); 
+	
 
 
 	//CDN
-	wp_enqueue_script('font_awesome_js', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js', array(), true);
-	wp_enqueue_script('jquery');
+	wp_enqueue_script('jquery3', 'https://code.jquery.com/jquery-3.6.1.js');
 
+	wp_enqueue_script('jquery-migrate', 'https://code.jquery.com/jquery-migrate-3.4.0.min.js');
+	wp_enqueue_script('font_awesome_js', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js', array(), true);
+
+
+
+
+wp_enqueue_script( 'custom-script', get_template_directory_uri() . '/assets/js/custom.js', array(), '1.0.0', true ); 
+	// wp_enqueue_script('jquery');   // Use this if wanna use build in Jquery Version.
 	// if you want your own version of Jquery then
 	//wp_deregister_script('jquery');
 	//wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-3.3.1.js', array(), null, true);
