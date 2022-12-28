@@ -1,5 +1,5 @@
 # wordpress-enqueue
-## Refernce
+## Reference
 
 ```
 function custom_enqueue_style() {
