@@ -1,6 +1,14 @@
 # wordpress-enqueue
 ## Reference
 
+[wp_register_script](https://developer.wordpress.org/reference/functions/wp_register_script/)
+
+[wp_enqueue_script](https://developer.wordpress.org/reference/functions/wp_enqueue_script/)
+
+[get_template_directory_uri()](https://developer.wordpress.org/reference/functions/get_template_directory_uri/)
+
+[get_stylesheet_directory_uri()](https://developer.wordpress.org/reference/functions/get_stylesheet_directory_uri/)
+
 ```
 function custom_enqueue_style() {
   /* https://developer.wordpress.org/reference/functions/wp_register_script/ 
