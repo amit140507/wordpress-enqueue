@@ -39,8 +39,6 @@ function custom_enqueue_style() {
 
 function custom_enqueue_script() {
 	
-
-
 	//CDN
 	wp_enqueue_script('jquery3', 'https://code.jquery.com/jquery-3.6.1.js');
 
