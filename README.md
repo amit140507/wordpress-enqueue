@@ -1,13 +1,5 @@
 # wordpress-enqueue
-## Reference
-
-[wp_register_script](https://developer.wordpress.org/reference/functions/wp_register_script/)
-
-[wp_enqueue_script](https://developer.wordpress.org/reference/functions/wp_enqueue_script/)
-
-[get_template_directory_uri()](https://developer.wordpress.org/reference/functions/get_template_directory_uri/)
-
-[get_stylesheet_directory_uri()](https://developer.wordpress.org/reference/functions/get_stylesheet_directory_uri/)
+## Reference Code
 
 ```
 function custom_enqueue_style() {
@@ -92,3 +84,18 @@ function custom_enqueue_script() {
 add_action( 'wp_enqueue_scripts', 'custom_enqueue_style' );
 add_action( 'wp_enqueue_scripts', 'custom_enqueue_script' );
 ```
+## References
+
+### [wp_register_script](https://developer.wordpress.org/reference/functions/wp_register_script/)
+
+### [wp_enqueue_script](https://developer.wordpress.org/reference/functions/wp_enqueue_script/)
+
+### [get_template_directory_uri()](https://developer.wordpress.org/reference/functions/get_template_directory_uri/)
+
+Retrieves template directory URI for the active theme.
+
+**NOTE: In the event a child theme is being used, this function will return the child’s theme directory URI. Use get_template_directory_uri() to avoid being overridden by a child theme.**
+
+### [get_stylesheet_directory_uri()](https://developer.wordpress.org/reference/functions/get_stylesheet_directory_uri/)
+
+Retrieves stylesheet directory URI for the active theme.
